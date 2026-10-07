@@ -55,3 +55,11 @@ Import this repository, use Next.js defaults, and set the six env variables for 
 same Supabase project. No separate backend app or serverless root api folder.
 Live project/deployment verification stays pending until credentials and hosting exist.
 Seed-photo placeholders are authorized and will be centralized for easy replacement.
+
+## Dependency audit at handoff
+npm audit --omit=dev reports zero runtime vulnerabilities.
+The full npm audit reports five linked high-severity findings in the scaffold's
+ESLint fast-glob/micromatch/braces chain (GHSA-vfj7-8cjw-p6xm). No patched braces
+release is available from the registry at this check. The suggested forced fix
+downgrades eslint-config-next to 14.x; it was not applied to the Next.js 16 scaffold.
+This tooling issue is tracked here separately from runtime dependencies.

@@ -59,7 +59,7 @@ Exports: encodeConfig -> `?f=f2,f4`; decodeConfig ignores unknown IDs/defaults m
 - [x] Audit/plan approved. Order: 1 -> 6 -> 2 -> 3 -> 4 -> 5 -> 7; stop after 1 and 6.
 - [x] 1 Setup/migration/RLS/storage: 7 local PostgreSQL tests, typecheck/lint/build passed.
 - [ ] Live Supabase SQL application and Storage CORS verification (credentials required).
-- [ ] 6 Shared utilities/schemas/types + lib/mock-product.json: phone/price/config/default/message tests.
+- [x] 6 Shared utilities/schemas/types + lib/mock-product.json: 15 tests, browser bundle/typecheck/lint/build passed.
 - [ ] 2 SSR auth/profile: signup/onboard, cookie refresh, invalid session/phone tests.
 - [ ] 3 CRUD/dimensions: autosave, A-cannot-read/edit/delete-B tests; no ID/SKU concurrency tests.
 - [ ] 4 Publish/public: missing-items, projection, draft/unknown 404, unpublish/views.
@@ -67,4 +67,4 @@ Exports: encodeConfig -> `?f=f2,f4`; decodeConfig ignores unknown IDs/defaults m
 - [ ] 7 Handoff: best-effort instance-local rate limits (30-minute cap), API.md examples, types/client, npm run seed (demo artisan/table/chair/shelf; centralized replaceable placeholder photos), deployment notes.
 - [ ] Done: deployed signup -> onboarding -> draft -> upload -> parts/finishes -> publish -> anonymous link -> price/config -> prefilled WhatsApp; draft/nonowner blocked on artisan APIs, B's published page intentionally public.
 
-Phase gate: test, tick verified work, report three lines/exact commands. Planned: `npm run dev`, `npm test`, `npm run typecheck`, `npm run verify` (two-user cookie-session API/RLS script), final `npm run build`/deployed phone checks. Teammate wires UI; integration needs app/Supabase/Vercel access. Simplify >30-minute work/document limitations. Only Phases 1 and 6 authorized now; no paid/out-of-scope features.
+Phase gate: test, tick verified work, report three lines/exact commands. Verify: `npm test`, `npm run typecheck`, `npm run lint`, `npm run build`; hosted checks: `npm run check:env`, `npm run verify:supabase`. Details: SETUP.md/SHARED_LIB.md. Phase 3 adds live cookie-session ownership checks. Frontend wires UI. Simplify >30-minute work/document limits. Stop after 1/6; no paid/out-of-scope features.

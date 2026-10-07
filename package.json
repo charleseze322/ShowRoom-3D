@@ -12,7 +12,8 @@
     "typecheck": "tsc --noEmit",
     "check:env": "tsx scripts/check-env.ts",
     "check:staged": "tsx scripts/check-staged.ts",
-    "verify:supabase": "tsx scripts/verify-supabase.ts"
+    "verify:supabase": "tsx scripts/verify-supabase.ts",
+    "test:shared": "tsx --test tests/shared.test.ts"
   },
   "dependencies": {
     "@supabase/ssr": "^0.12.7",

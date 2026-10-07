@@ -1,0 +1,24 @@
+{
+  "publicId": "k7Xm2pQa9R",
+  "name": "Minimalist Dining Table",
+  "sku": "SR-042",
+  "photoUrls": ["https://placehold.co/1200x800/png?text=Dining+Table"],
+  "modelUrl": null,
+  "parts": [
+    {"id":"p1","label":"Tabletop","shape":"box","size":[180,4,90],"position":[0,75,0],"slot":"primary"},
+    {"id":"p2","label":"Front left leg","shape":"cylinder","size":[4,75],"position":[-80,37.5,-35],"slot":"secondary"},
+    {"id":"p3","label":"Front right leg","shape":"cylinder","size":[4,75],"position":[80,37.5,-35],"slot":"secondary"},
+    {"id":"p4","label":"Back left leg","shape":"cylinder","size":[4,75],"position":[-80,37.5,35],"slot":"secondary"},
+    {"id":"p5","label":"Back right leg","shape":"cylinder","size":[4,75],"position":[80,37.5,35],"slot":"secondary"}
+  ],
+  "finishes": [
+    {"id":"f1","slot":"primary","name":"Dark Smoked Walnut","color":"#3B2219","textureUrl":null,"priceModifier":0,"isDefault":true},
+    {"id":"f2","slot":"primary","name":"White Carrara Marble","color":"#F0F0F0","textureUrl":null,"priceModifier":25000,"isDefault":false},
+    {"id":"f3","slot":"secondary","name":"Black Steel","color":"#1A1A1A","textureUrl":null,"priceModifier":0,"isDefault":true},
+    {"id":"f4","slot":"secondary","name":"Brushed Brass","color":"#B5A642","textureUrl":null,"priceModifier":15000,"isDefault":false}
+  ],
+  "basePrice": 150000,
+  "currency": "NGN",
+  "dimensions": "180cm x 90cm x 77cm",
+  "artisan": {"businessName":"Ade Woodworks","whatsapp":"2348012345678","location":"Lagos"}
+}
